@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72a16f87-f689-47a1-95f0-7adb848ad34f" name="Default" comment="chang">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/xiaofan/zhang/Ppline.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
