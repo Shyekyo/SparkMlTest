@@ -1,6 +1,7 @@
 package xiaofan.zhang
 
 import breeze.linalg.{DenseMatrix, DenseVector}
+import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.api.java.UDF1
 
 /**
@@ -28,6 +29,16 @@ object LDA {
     val rand = DenseMatrix.rand[Double](2,3)
     println(rand)
     println(rand(0,1))
+
+    val spark = SparkSession.builder().appName("lr").master("local").
+      config("spark.sql.warehouse.dir", "D:/GITRepo/SparkMlTest/spark-warehouse").getOrCreate()
+    val movies = spark.sparkContext.parallelize(Array[String]("wo shi","gu du"))
+    val collect = movies.map({ line =>
+      val words = line.split(" ")
+      (words(0), words(1))
+    }).collect()
+    val toMap = collect.toMap
+    print(toMap)
   }
 
 }
