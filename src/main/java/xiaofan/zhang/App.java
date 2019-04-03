@@ -10,30 +10,30 @@ public class App
 {
     public static void main( String[] args )
     {
-        //mp();
+        mp();
         //int jc = jc(5);
-        cheng(732,16);
+        int num = 50;
+        int[] ints = new int[100];
+        ints[ints.length-1]=1;
+        print(ints);
+        for (int i = 1; i <= num; i++) {
+            ints = cheng(ints,i);
+        }
+        print(ints);
+
 
     }
 
-    private static void cheng(int num1,int num2) {
-        String num = new StringBuilder(String.valueOf(num1)).reverse().toString();
-        int length = num.length();
-        int[] ints = new int[length];
-        for (int i = length; i >0 ; i--) {
-            ints[i-1]=num.charAt(i-1);
-        }
-        int b = num2;
+    private static int[] cheng(int[] ints,int num) {
+
         for (int i = 0; i <ints.length ; i++) {
-            ints[i]=ints[i]*b;
+            ints[i]=ints[i]*num;
         }
         for (int i = ints.length-1; i > 0; i--) {
             ints[i-1] = ints[i-1]+(ints[i]/10);
             ints[i]=ints[i]%10;
         }
-        print(ints);
-
-
+        return ints;
     }
     private static void print(int[] ints) {
         StringBuffer sb = new StringBuffer(100);
@@ -67,9 +67,7 @@ public class App
                 }
             }
         }
-        for (int i = 0; i <arr.length ; i++) {
-            System.out.println(arr[i]);
-        }
+        print(arr);
     }
 
 
