@@ -2,6 +2,8 @@ package xiaofan.zhang;
 
 import scala.math.Ordering;
 
+import java.io.File;
+
 /**
  * Hello world!
  *
@@ -23,10 +25,11 @@ public class App
         int[] arr = new int[]{2,3,5,6,4,7,9,7};
         //int[] arr = new int[]{3,2,5,6,7,9,1};
         int[] ints = insertSort2(arr);
-        print(ints);*/
+        print(ints);
         int[] arr = new int[]{2,3,5,6,7,8,9,10};
         int i = searchB2(arr, 10, 0, arr.length);
-        System.out.println(i);
+        System.out.println(i);*/
+        //listDir(new File("."));
     }
 
     private static int[] cheng(int[] ints,int num) {
@@ -141,6 +144,42 @@ public class App
             }
         }
         return -1;
+    }
+    private static void listDir(File file) {
+        if(file.isDirectory()){
+            File[] files = file.listFiles();
+            for (int i = 0; i <files.length ; i++) {
+                if(files[i].isDirectory()){
+                    listDir(files[i]);
+                }else{
+                    System.out.println(files[i].getName());
+                }
+            }
+        }
+    }
+
+    private static void consoleFile(String fileDir, int num) {
+        File file = new File(fileDir);
+        File[] files = file.listFiles();// 获取目录下的所有文件或文件夹
+        if (files == null) {// 如果目录为空，直接退出
+            return;
+        }
+        // 遍历，目录下的所有文件
+        for (File f : files) {
+            if (f.isDirectory()) {
+                consoleSplit(f.getAbsolutePath(), num);
+                consoleFile(f.getAbsolutePath(), num + 1);
+            } else if (f.isFile()) {
+                consoleSplit(f.getAbsolutePath(), num);
+            }
+        }
+    }
+
+    private static void consoleSplit(String fileName, int num) {
+        for (int i = 0; i < num; i++) {
+            System.out.print("|========");
+        }
+        System.out.println(fileName);
     }
 
 }
