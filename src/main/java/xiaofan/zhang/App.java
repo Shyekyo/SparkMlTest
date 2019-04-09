@@ -28,8 +28,15 @@ public class App
         print(ints);
         int[] arr = new int[]{2,3,5,6,7,8,9,10};
         int i = searchB2(arr, 10, 0, arr.length);
-        System.out.println(i);*/
-        //listDir(new File("."));
+        System.out.println(i);
+        listDir(new File("."));
+        int run = run(6);
+        System.out.println(run);
+        int run2 = run2(6);
+        System.out.println(run2);*/
+        int[] arr = new int[]{3,2,5,6,7,9,1,1};
+        int[] ints = sort(arr,0,arr.length-1);
+        print(ints);
     }
 
     private static int[] cheng(int[] ints,int num) {
@@ -155,6 +162,8 @@ public class App
                     System.out.println(files[i].getName());
                 }
             }
+        }else{
+            System.out.println(file.getName());
         }
     }
 
@@ -182,4 +191,56 @@ public class App
         System.out.println(fileName);
     }
 
+    public static int run(int n){
+        if(n==1||n==2){
+            return 1;
+        }else{
+            return run(n-1)+run(n-2);
+        }
+    }
+    public static int run2(int n){
+        int num1 = 1;
+        int num2 = 1;
+        int num3=0;
+        if(n==1||n==2){
+            return 1;
+        }
+        for (int i = 3; i <=n ; i++) {
+            num3 = num1+num2;
+            num1 = num2;
+            num2 = num3;
+        }
+        return num3;
+    }
+    public static int[] sort(int[] arr,int s,int e){
+        //3,2,5,6,7,9,1
+        if(s<e){
+            int index = quickSort(arr,s,e);
+            sort(arr,s,index-1);
+            sort(arr,index+1,e);
+        }
+        return arr;
+    }
+    public static int quickSort(int[] arr,int s ,int e){
+        //4,7,9,7,2,3,5,6
+        int mark = arr[s];
+        while(s<e){
+            while(s<e){
+                if(mark>arr[e]){
+                    arr[s]=arr[e];
+                    break;
+                }
+                e--;
+            }
+            while(s<e){
+                if(arr[s]>=mark){
+                    arr[e]=arr[s];
+                    break;
+                }
+                s++;
+            }
+        }
+        arr[s]=mark;
+        return s;
+    }
 }
