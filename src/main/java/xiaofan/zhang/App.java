@@ -33,10 +33,12 @@ public class App
         int run = run(6);
         System.out.println(run);
         int run2 = run2(6);
-        System.out.println(run2);*/
+        System.out.println(run2);
         int[] arr = new int[]{3,2,5,6,7,9,1,1};
         int[] ints = sort(arr,0,arr.length-1);
-        print(ints);
+        print(ints);*/
+        int[] arr = new int[]{1,2,3,6,8,5,19,20,16,4,2,7,13,9,11};
+        heapSort(arr);
     }
 
     private static int[] cheng(int[] ints,int num) {
@@ -243,4 +245,15 @@ public class App
         arr[s]=mark;
         return s;
     }
+    //父节点=（size-1）/2
+    //1,2,3,6,8,5,19,20,16,4,2,7,13,9,11
+    //5,7,2,5,8,9,3,4,6
+    public static int[] heapSort(int[] arr){
+        for (int i = (arr.length-1)/2; i >0 ; i--) {
+            System.out.println(arr[i]);
+            //先找到最大的儿子
+        }
+        return arr;
+    }
+
 }

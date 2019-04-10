@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72a16f87-f689-47a1-95f0-7adb848ad34f" name="Default" comment="chang">
-      <change afterPath="$PROJECT_DIR$/src/main/java/xiaofan/zhang/Test3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xiaofan/zhang/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xiaofan/zhang/App.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/xiaofan/zhang/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="147" column="24" lean-forward="true" selection-start-line="147" selection-start-column="24" selection-end-line="147" selection-end-column="24" />
+            <state relative-caret-position="2384">
+              <caret line="254" column="9" lean-forward="true" selection-start-line="254" selection-start-column="9" selection-end-line="254" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,14 +31,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/xiaofan/zhang/Test3.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/xiaofan/zhang/MlinkList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-              <folding>
-                <element signature="e#177#178#0" expanded="true" />
-                <element signature="e#198#199#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="275">
+              <caret line="66" column="38" lean-forward="true" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -67,8 +61,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/xiaofan/zhang/LDA.scala" />
         <option value="$PROJECT_DIR$/src/main/java/xiaofan/zhang/Node.java" />
         <option value="$PROJECT_DIR$/src/main/java/xiaofan/zhang/MlinkList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xiaofan/zhang/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/xiaofan/zhang/Test3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xiaofan/zhang/App.java" />
       </list>
     </option>
   </component>
@@ -171,7 +165,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test3">
+  <component name="RunManager" selected="Application.App">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -322,8 +316,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test3" />
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.Test3" />
         <item itemvalue="Application.MlinkList" />
         <item itemvalue="Application.LDA" />
         <item itemvalue="Application.Ppline" />
@@ -362,7 +356,7 @@
     <frame x="0" y="0" width="1366" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19708589" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19708589" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -456,17 +450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xiaofan/zhang/MlinkList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="66" column="38" lean-forward="true" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
-          <folding>
-            <element signature="e#697#698#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/xiaofan/zhang/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -484,24 +467,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xiaofan/zhang/Test3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="e#177#178#0" expanded="true" />
+            <element signature="e#198#199#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/xiaofan/zhang/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="147" column="24" lean-forward="true" selection-start-line="147" selection-start-column="24" selection-end-line="147" selection-end-column="24" />
+        <state relative-caret-position="2384">
+          <caret line="254" column="9" lean-forward="true" selection-start-line="254" selection-start-column="9" selection-end-line="254" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xiaofan/zhang/Test3.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/xiaofan/zhang/MlinkList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="e#177#178#0" expanded="true" />
-            <element signature="e#198#199#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="275">
+          <caret line="66" column="38" lean-forward="true" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
         </state>
       </provider>
     </entry>
