@@ -73,7 +73,11 @@
       <version>${spark.version}</version>
       <scope>compile</scope>
     </dependency>
-
+    <dependency>
+      <groupId>com.github.nobodxbodon</groupId>
+      <artifactId>zhconverter</artifactId>
+      <version>0.0.5</version>
+    </dependency>
     <dependency>
       <groupId>org.scala-lang</groupId>
       <artifactId>scala-library</artifactId>
@@ -89,6 +93,11 @@
       <artifactId>spark-sql_2.11</artifactId>
       <version>${spark.version}</version>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.spreada</groupId>
+      <artifactId>ZHConverter</artifactId>
+      <version>1.0.0</version>
     </dependency>
     <!--<dependency>
       <groupId>com.oracle</groupId>
