@@ -52,20 +52,25 @@ object Lr {
 //    }
 //    println(" model 2 coefficients : "+model2.coefficients +" intercept : "+model2.intercept)
 //    println(" model 1 coefficients : "+model1.coefficients +" intercept : "+model1.intercept)
-    val line = spark.sparkContext.parallelize(Seq(("1 sdf:0"),("0 wer:1")))
+    val m = Map[String,String](("name"->"a"),("age" -> "b"),("sex" -> "c"),("num" -> "d"))
+    val line = spark.sparkContext.parallelize(Seq(("1 num:135 age:15"),("0 num:187 sex:10")))
+    val kv = spark.sparkContext.broadcast(m)
     val c = line.map(x => {
       val sb = new StringBuilder()
       sb.clear()
       val arr = x.split(" ")
       val label=arr(0)
-      val one=arr(1)
-      val two = one.split(":")
-      val a = two(0)
-      val b = two(1)
-      sb.append(label).append(" ").append(a).append(":").append(a).append(":").append(b)
+      sb.append(label)
+      for (i <- 1 until arr.length){
+        val content = arr(i).split(":")
+        val feat_id = content(0)
+        val feat_value = content(1)
+        val field_id = kv.value.getOrElse(content(0),"")
+        sb.append(" ").append(field_id).append(":").append(feat_id).append(":").append(feat_value)
+      }
+      sb
     })
     c.foreach(x => println(x))
-
     spark.stop()
   }
 }
