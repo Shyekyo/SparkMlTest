@@ -36,9 +36,9 @@ public class App
         System.out.println(run2);
         int[] arr = new int[]{3,2,5,6,7,9,1,1};
         int[] ints = sort(arr,0,arr.length-1);
-        print(ints);*/
+        print(ints);
         int[] arr = new int[]{1,2,3,6,8,5,19,20,16,4,2,7,13,9,11};
-        heapSort(arr);
+        heapSort(arr);*/
     }
 
     private static int[] cheng(int[] ints,int num) {
@@ -159,6 +159,7 @@ public class App
             File[] files = file.listFiles();
             for (int i = 0; i <files.length ; i++) {
                 if(files[i].isDirectory()){
+
                     listDir(files[i]);
                 }else{
                     System.out.println(files[i].getName());
