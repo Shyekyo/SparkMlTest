@@ -1,12 +1,51 @@
 package xiaofan.zhang;
 
 
+import sun.text.resources.sk.CollationData_sk;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
 /**
  * Created by zhangxiaofan on 2019/4/9.
  */
 public class Test3 {
     public static void main(String[] args) {
-        /*String str = "babcbabcbaccba";
+        /*Scanner scanner = new Scanner(System.in);
+        scanner.useDelimiter("\n");
+        ArrayList<String> list = new ArrayList<>();
+        while(scanner.hasNext()){
+            String next = scanner.next();
+            if("end".equals(next)) break;
+            list.add(next);
+        }
+//        for (String str:list) {
+//            System.out.println(str);
+//        }
+        System.out.println("===============");
+        int k = Integer.valueOf(list.get(0));
+        list.remove(0);
+        int n = Integer.valueOf(list.get(0));
+        list.remove(0);
+//        for (String str:list) {
+//            System.out.println(str);
+//        }
+        ArrayList<Double> res = new ArrayList<>();
+        for (int i = 0; i <list.size()-1 ; i++) {
+            String[] s = list.get(i).split(" ");
+            String[] s1 = list.get(i+1).split(" ");
+            double cal = cal(Double.parseDouble(s[0]), Double.parseDouble(s[1]),
+                    Double.parseDouble(s1[0]), Double.parseDouble(s1[1]));
+            res.add(cal);
+        }
+        Collections.sort(res);
+        double ceil = Math.ceil((n - 1) * (k / 100.0));
+        System.out.println(ceil);
+        Double aDouble = res.get((int) ceil);
+        System.out.println(aDouble);
+        //===========================================
+        String str = "babcbabcbaccba";
         str = "bacab";
         String s = longestPalindrome1(str);
         System.out.println(s);
@@ -24,11 +63,15 @@ public class Test3 {
                 }
             }
         }
-        System.out.println(maxlongs);*/
+        System.out.println(maxlongs);
         int target=9;
         int[] arrs ={1,2,3,4,5,6,7,8};
         int i = twoSearch(target, 0, arrs.length - 1, arrs);
-        System.out.println(i);
+        System.out.println(i);*/
+    }
+    private static double cal(double x1,double y1,double x2,double y2){
+        double v = Math.pow((x1 - x2),2) + Math.pow((y1 - y2),2);
+        return Math.sqrt(v);
     }
     public static Boolean ok(String s){
         for (int i = 0; i <s.length() ; i++) {

@@ -2,7 +2,9 @@ package xiaofan.zhang;
 
 import scala.math.Ordering;
 
+import javax.script.ScriptEngineManager;
 import java.io.File;
+import java.util.Stack;
 
 /**
  * Hello world!
@@ -38,10 +40,10 @@ public class App
         int[] ints = sort(arr,0,arr.length-1);
         print(ints);
         int[] arr = new int[]{1,2,3,6,8,5,19,20,16,4,2,7,13,9,11};
-        heapSort(arr);*/
+        heapSort(arr);
         int[] arr = new int[]{1,2,3,6,8,5,19,20,16,4,2,7,13,9,11};
         int[] sort = insertSort(arr);
-        print(sort);
+        print(sort);*/
     }
 
     private static int[] cheng(int[] ints,int num) {
@@ -55,7 +57,7 @@ public class App
         }
         return ints;
     }
-    private static void print(int[] ints) {
+    public static void print(int[] ints) {
         StringBuffer sb = new StringBuffer(100);
         for (int i = 0; i < ints.length; i++) {
             sb.append(ints[i]).append(" ");
