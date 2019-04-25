@@ -6,7 +6,7 @@ package xiaofan.zhang;
  */
 public class Test3 {
     public static void main(String[] args) {
-        String str = "babcbabcbaccba";
+        /*String str = "babcbabcbaccba";
         str = "bacab";
         String s = longestPalindrome1(str);
         System.out.println(s);
@@ -24,8 +24,11 @@ public class Test3 {
                 }
             }
         }
-        System.out.println(maxlongs);
-
+        System.out.println(maxlongs);*/
+        int target=9;
+        int[] arrs ={1,2,3,4,5,6,7,8};
+        int i = twoSearch(target, 0, arrs.length - 1, arrs);
+        System.out.println(i);
     }
     public static Boolean ok(String s){
         for (int i = 0; i <s.length() ; i++) {
@@ -65,5 +68,19 @@ public class Test3 {
         }
 
         return true;
+    }
+
+    public static int twoSearch(int target , int start ,int end , int[] arrs){
+        if(start>end) return -1;
+        int mid = (start+end)/2;
+        if(arrs[mid]>target){
+            end = mid-1;
+            return twoSearch(target,start,end,arrs);
+        }else if(arrs[mid]<target){
+            start = mid+1;
+            return twoSearch(target,start,end,arrs);
+        }else{
+            return mid;
+        }
     }
 }
