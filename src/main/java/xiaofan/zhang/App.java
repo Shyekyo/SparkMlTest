@@ -39,6 +39,9 @@ public class App
         print(ints);
         int[] arr = new int[]{1,2,3,6,8,5,19,20,16,4,2,7,13,9,11};
         heapSort(arr);*/
+        int[] arr = new int[]{1,2,3,6,8,5,19,20,16,4,2,7,13,9,11};
+        int[] sort = insertSort(arr);
+        print(sort);
     }
 
     private static int[] cheng(int[] ints,int num) {
@@ -55,7 +58,7 @@ public class App
     private static void print(int[] ints) {
         StringBuffer sb = new StringBuffer(100);
         for (int i = 0; i < ints.length; i++) {
-            sb.append(ints[i]);
+            sb.append(ints[i]).append(" ");
         }
         System.out.println(sb.toString());
     }
@@ -103,7 +106,8 @@ public class App
         }
         return arr;
     }
-
+    //1 两两比较，如果前一位大于后一位，则进入循环，比较前几位和当前位置大小
+    //2 如果当前位置小于前几位的某位置，则交换位置，并第一次循环的下标减减，重新再次比较
     private static int[] insertSort2(int[] arr) {
         //2,3,5,6,4,7,9,7
         for (int i = 1; i <arr.length ; i++) {
@@ -229,12 +233,14 @@ public class App
         int mark = arr[s];
         while(s<e){
             while(s<e){
+                //3,7,9,7,2,3,5,6
                 if(mark>arr[e]){
                     arr[s]=arr[e];
                     break;
                 }
                 e--;
             }
+            //3,7,9,7,2,7,5,6
             while(s<e){
                 if(arr[s]>=mark){
                     arr[e]=arr[s];
@@ -246,6 +252,11 @@ public class App
         arr[s]=mark;
         return s;
     }
+    //7,9,7,5,6 mark=7
+    //6,9,7,5,6
+    //6,5,7,7,9
+    //
+
     //父节点=（size-1）/2
     //1,2,3,6,8,5,19,20,16,4,2,7,13,9,11
     //5,7,2,5,8,9,3,4,6
