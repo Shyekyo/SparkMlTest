@@ -238,7 +238,7 @@ public class App
                 //3,7,9,7,2,3,5,6
                 if(mark>arr[e]){
                     arr[s]=arr[e];
-                    break;
+                   break;
                 }
                 e--;
             }
@@ -254,6 +254,7 @@ public class App
         arr[s]=mark;
         return s;
     }
+
     //7,9,7,5,6 mark=7
     //6,9,7,5,6
     //6,5,7,7,9
