@@ -1,4 +1,4 @@
-package xiaofan.zhang;
+package xiaofan.zhang.other;
 
 import org.apache.commons.collections.map.HashedMap;
 

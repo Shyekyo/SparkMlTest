@@ -1,4 +1,4 @@
-package xiaofan.zhang.xiaofan.zhang.observerMode;
+package xiaofan.zhang.observerMode;
 
 import java.util.ArrayList;
 import java.util.List;

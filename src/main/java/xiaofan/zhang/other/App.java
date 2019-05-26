@@ -1,4 +1,4 @@
-package xiaofan.zhang;
+package xiaofan.zhang.other;
 
 import scala.math.Ordering;
 

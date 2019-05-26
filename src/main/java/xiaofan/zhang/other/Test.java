@@ -1,4 +1,4 @@
-package xiaofan.zhang;
+package xiaofan.zhang.other;
 
 /**
  * Created by zhangxiaofan on 2019/5/4.

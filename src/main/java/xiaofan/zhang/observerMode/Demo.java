@@ -1,7 +1,4 @@
-package xiaofan.zhang.xiaofan.zhang.observerMode;
-
-import java.util.ArrayList;
-import java.util.HashMap;
+package xiaofan.zhang.observerMode;
 
 /**
  * Created by zhangxiaofan on 2019/5/26.

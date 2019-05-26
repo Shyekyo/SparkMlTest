@@ -1,4 +1,4 @@
-package xiaofan.zhang.xiaofan.zhang.observerMode;
+package xiaofan.zhang.observerMode;
 
 /**
  * Created by zhangxiaofan on 2019/5/26.
