@@ -44,6 +44,8 @@ public class App
         int[] arr = new int[]{1,2,3,6,8,5,19,20,16,4,2,7,13,9,11};
         int[] sort = insertSort(arr);
         print(sort);*/
+        double newton = general(3);
+        System.out.println(newton);
     }
 
     private static int[] cheng(int[] ints,int num) {
@@ -270,5 +272,30 @@ public class App
         }
         return arr;
     }
+  /*  float SqrtByNewton(float x)
+    {
+        float val=x;
+        float last;
+        while(fabs(val-last)>eps)
+        {
+            last=val;
+            val=(val+x/val)/2;
+        }
+        return val;
+    }*/
+    public static double general(int x){
+
+        double i = 0;
+        double j = x/2+1;
+        System.out.println(j);
+        while(i<=j) {
+            double mid = j * j;
+            if (mid == x) return j;
+            else if (mid > x) j = j- 0.001;
+            else i = i + 0.001;
+        }
+        return j;
+    }
+
 
 }
