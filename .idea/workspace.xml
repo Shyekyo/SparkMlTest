@@ -153,15 +153,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="zhang" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SparkMlTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SparkMlTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zhang" type="462c0819:PsiDirectoryNode" />
-              <item name="other" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
