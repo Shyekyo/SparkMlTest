@@ -90,4 +90,19 @@ public class Test {
         }
         return num3;
     }
+    //7,9,7,3,5,6,4,2
+    public static void insertSort2(int[] arr){
+        for (int i = 1; i < arr.length; i++) {
+            if(arr[i]<arr[i-1]){
+                for (int j = 0; j < i ; j++) { //0 2
+                    if(arr[i]<arr[j]) {
+                        int tmp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = tmp;
+                        i--;
+                    }
+                }
+            }
+        }
+    }
 }
