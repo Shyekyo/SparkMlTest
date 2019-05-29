@@ -39,6 +39,7 @@ object LDA {
     }).collect()
     val toMap = collect.toMap
     print(toMap)
+
   }
 
 }
