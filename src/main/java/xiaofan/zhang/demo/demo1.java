@@ -13,8 +13,10 @@ public class demo1 {
         demo1 demo1 = new demo1();
         int[] ints = {4,9,5};
         int[] ints1 = {9,4,9,8,4};
-        int[] ints2 = demo1.intersect1(ints, ints1);
-        App.print(ints2);
+        int i =0;
+        if(++i>0){
+            System.out.println("--");
+        }
     }
 
     public int[] intersect1(int[] nums1, int[] nums2) {
