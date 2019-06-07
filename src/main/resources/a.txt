@@ -1,0 +1,6 @@
+﻿1 li 90
+2 zhang 82
+3 wang 60
+4 zhang 40
+5 chen 88
+6 li 70

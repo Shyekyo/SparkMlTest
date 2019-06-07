@@ -1,10 +1,7 @@
 package xiaofan.zhang.other;
 
-import scala.math.Ordering;
 
-import javax.script.ScriptEngineManager;
 import java.io.File;
-import java.util.Stack;
 
 /**
  * Hello world!
@@ -46,6 +43,7 @@ public class App
         print(sort);*/
         double newton = general(3);
         System.out.println(newton);
+        String s ="df";
     }
 
     private static int[] cheng(int[] ints,int num) {
@@ -59,7 +57,7 @@ public class App
         }
         return ints;
     }
-    public static void print(int[] ints) {
+    public static void  print(int[] ints) {
         StringBuffer sb = new StringBuffer(100);
         for (int i = 0; i < ints.length; i++) {
             sb.append(ints[i]).append(" ");
@@ -91,6 +89,7 @@ public class App
                 }
             }
         }
+
         print(arr);
     }
     private static int[] insertSort(int[] arr) {
