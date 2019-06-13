@@ -11,7 +11,7 @@ public class Demo2 {
             public void run() {
                 synchronized (o){
                     for (int i = 0; i <3 ; i++) {
-                        System.out.println(i);
+                        System.out.println(i+"-");
                         try {
                             o.wait();
                         } catch (InterruptedException e) {
@@ -37,6 +37,6 @@ public class Demo2 {
         }).start();
 
         int a =0;
-        System.out.println( a++);
+        System.out.println( "..."+a++);
     }
 }

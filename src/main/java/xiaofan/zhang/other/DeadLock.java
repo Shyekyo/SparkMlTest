@@ -24,9 +24,13 @@ public class DeadLock {
                             System.out.print(i * 2 + 1 + ",");
                             flag[0] = false;
                             lock.notify();
+                            System.out.println("notify之后////");
                             if (i < 49) {//打印完最后一个，不需要再wait了。
+                                System.out.println("..if");
                                 lock.wait();
+                                System.out.println("if里wait之后");
                             }
+                            System.out.println("if之外====");
                             break;
                         }
                     }
@@ -44,13 +48,19 @@ public class DeadLock {
                             System.out.print(i * 2 + 2 + ",");
                             flag[0] = true;
                             lock.notify();
+                            System.out.println("notify之后....");
                             if (i < 49) {//打印完最后一个，不需要再wait了。
+                                System.out.println("if..");
                                 lock.wait();
+                                System.out.println("if里wait之后,,,,");
                             }
+                            System.out.println("if之外----");
                             break;
-                        } else {
+                        } /*else {
+                            System.out.println(000000000000000+"1");
                             lock.wait();
-                        }
+                            System.out.println(000000000000000+"");
+                        }*/
                     }
                 }
             }
